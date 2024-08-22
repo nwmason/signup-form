@@ -52,7 +52,9 @@ fieldset {
 
 .banner-ribbon {
     height: 96px;
-    width: 42%;
+/*Unsure why banner ribbon extends past it's parent 
+when set to 100% width. Band-aid fix for now*/
+    width: 42.8%; 
     background-color: #00000088;
     color: white;
     display: flex;
