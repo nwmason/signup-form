@@ -5,6 +5,11 @@ body {
     display: flex;
     margin: 0;
     padding: 0;
+    width: 100%;
+}
+
+html {
+    width: 100%;
 }
 
 * {
@@ -18,12 +23,27 @@ ul {
     list-style-type: none;
 }
 
+label {
+    color: #1b0e00aa;
+    font-weight: 500;
+    margin-left: 64px;
+}
+
+input {
+    margin-right: 128px;
+    margin-left: 64px;
+}
+
+fieldset {
+    border: none 
+}
+
 #banner-image {
     background-image: url(img/banner.jpeg) ;
     background-size: cover;
     background-position: center;
     height: 100vh;
-    width: 40%;
+    width: 75%;
     display: flex;
     justify-content: center;
     background-color: #89490556;
@@ -32,7 +52,7 @@ ul {
 
 .banner-ribbon {
     height: 96px;
-    width: inherit;
+    width: 42%;
     background-color: #00000088;
     color: white;
     display: flex;
@@ -66,6 +86,7 @@ ul {
     display: flex;
     flex-direction: column;
     color: #472502;
+    width: 100%;
 }
 
 .tag-text {
@@ -84,7 +105,7 @@ ul {
 }
 
 .form-container {
-    height: 356px;
+    height: auto;
     color: blue;
     display: flex;
     flex-direction: column;
@@ -92,7 +113,21 @@ ul {
                 0 -4px 2px #88888833;
 }
 
-label {
-    color: #1b0e00aa;
-    font-weight: 500;
+.submit-button {
+    height: 64px;
+    width: 256px;
+    margin: 48px;
+    margin-left: 116px;
+    border-radius: 12px;
+    border: none;
+    background-color: #5d3f03;
+    color: white;
+    font-size: 20px;
+    box-shadow: 0 4px 8px #00000088;
+}
+
+.submit-button:hover {
+    transform: translateY(-2px);
+    cursor: pointer;
+    background-color: #4c2e02;
 }
