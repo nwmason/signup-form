@@ -13,6 +13,10 @@ body {
     font-style: normal;
 }
 
+ul {
+    display: inline-block;
+    list-style-type: none;
+}
 
 #banner-image {
     background-image: url(img/banner.jpeg) ;
@@ -28,7 +32,7 @@ body {
 
 .banner-ribbon {
     height: 96px;
-    width: 40%;
+    width: inherit;
     background-color: #00000088;
     color: white;
     display: flex;
@@ -54,4 +58,41 @@ body {
     margin-bottom: 20px;
     max-width: 300px;
     text-align: center;
+}
+
+.container {
+    margin-top: 96px;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    color: #472502;
+}
+
+.tag-text {
+    font-weight: 600;
+    font-size: 28px;
+    margin-left: 64px;
+
+}
+
+.flavor-text {
+    font-weight: 500;
+    max-width: 600px;
+    font-size: 20px;
+    margin-left: 64px;
+    margin-bottom: 24px;
+}
+
+.form-container {
+    height: 356px;
+    color: blue;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 4px #00000099,
+                0 -4px 2px #88888833;
+}
+
+label {
+    color: #1b0e00aa;
+    font-weight: 500;
 }
