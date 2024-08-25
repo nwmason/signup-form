@@ -32,10 +32,37 @@ label {
 input {
     margin-right: 128px;
     margin-left: 64px;
+    outline: none;
+}
+
+input:required {
+    border: 2px solid #5e6aa7;
+}
+
+input[type="text"]:focus {
+    border: 2px solid #5e6aa7;
+    box-shadow: 2px 2px 6px #00000044;
+}
+
+input:invalid {
+    border-color: #f44336;
+}
+
+input:valid {
+    border: 2px solid #69a75e;
 }
 
 fieldset {
     border: none 
+}
+
+a:link {
+    color: #056816;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #056816;
 }
 
 #banner-image {
@@ -118,8 +145,8 @@ when set to 100% width. Band-aid fix for now*/
 .submit-button {
     height: 64px;
     width: 256px;
-    margin: 48px;
-    margin-left: 116px;
+    margin: 24px;
+    margin-left: 104px;
     border-radius: 12px;
     border: none;
     background-color: #5d3f03;
