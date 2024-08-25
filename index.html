@@ -25,35 +25,39 @@
                     <div>
                         <ul>
                             <li><label for="first-name">FIRST NAME</label></li>
-                            <li><input type="text" name="first-name" id="first-name" required></li>
+                            <li><input type="text" name="first-name" id="first-name" placeholder="John" minlength="2" maxlength="20" required></li>
                         </ul>
                         <ul>
                             <li><label for="last-name">LAST NAME</label></li>
-                            <li><input type="text" name="Last-name" id="Last-name" required></li>
+                            <li><input type="text" name="Last-name" id="Last-name" placeholder="Doe" minlength="2" maxlength="20" required></li>
                         </ul>
                     </div>
                     <div>
                         <ul>
                             <li><label for="email">EMAIL</label></li>
-                            <li><input type="email" name="email" id="Last-name" required></li>
+                            <li><input type="email" name="email" id="email" placeholder="jDoe@email.com" required></li>
                         </ul>
                         <ul>
                             <li><label for="phone">PHONE NUMBER</label></li>
-                            <li><input type="tel" name="phone" id="phone" required></li>
+                            <li><input type="tel" name="phone" id="phone" placeholder="555-455-5545" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></li>
                         </ul>
                     </div>
                     <div>
                         <ul>
                             <li><label for="password">PASSWORD</label></li>
-                            <li><input type="password" name="password" id="password" required></li>
+                            <li><input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required></li>
                         </ul>
                         <ul>
-                            <li><label for="phone">CONFIRM PASSWORD</label></li>
-                            <li><input type="password" name="password" id="password" required></li>
+                            <li><label for="password">CONFIRM PASSWORD</label></li>
+                            <li><input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" required></li>
                         </ul>
-                        <button class="submit-button">Create Account</button>
-
                     </div>
+                    <div>
+                        <ul style="margin: 0; margin-left: 64px;">
+                            <li style="font-size: 12px; color: #00000088;">Passwords must include at least one uppercase and lowercase letter, one number, and be 6 or more characters long.</li>
+                        </ul>
+                    </div>
+                    <button class="submit-button">Create Account</button>
                 </fieldset>
             </form>
         </div>
